@@ -4,6 +4,7 @@ class CreateGroceries < ActiveRecord::Migration[6.0]
       t.string :groceryItem
       t.integer :qty
       t.string :notes
+      t.string :market_id
       t.timestamps
     end
   end

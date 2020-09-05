@@ -11,4 +11,4 @@ safeway = Market.create(name: "Safe Way")
 wholefoods = Market.create(name: "Whole Foods")
 newseasons = Market.create(name: "New Seasons")
 
-Market.create(groceryItem: "Lemons", qty: 5, notes: "Lemons for lemonade", market_id: wholefoods.id)
+Grocery.create(groceryItem: "Lemons", qty: 5, notes: "Lemons for lemonade", market_id: wholefoods.id)

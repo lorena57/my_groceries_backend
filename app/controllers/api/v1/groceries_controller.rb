@@ -15,6 +15,16 @@ class Api::V1::GroceriesController < ApplicationController
         end
     end
 
+    def destroy
+        grocery = Grocery.find_by(id: params[:id])
+        if grocery.destroy!
+            render :json => {
+                :status => :ok, 
+                :message => 'ok'
+            }.to_json
+        end
+    end
+
     private
 
     def grocery_params

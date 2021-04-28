@@ -28,7 +28,7 @@ class Api::V1::GroceriesController < ApplicationController
     private
 
     def grocery_params
-        params.require(:grocery).permit(:groceryItem, :qty, :notes, :market_id)
+        params.require(:grocery).permit(:qty, :notes, :market_id, :groceryItem)
     end
 
 end
